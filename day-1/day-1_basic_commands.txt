@@ -1,0 +1,68 @@
+📁 Module 1: Directory (Folder) Management
+Commands to create, navigate, and organize folders.
+mkdir <name> (Make Directory) Creates a new empty folder.
+Example: mkdir Project
+mkdir -p <path> (Parent Directory) Creates a nested directory structure (folders inside folders) in one go.
+Example: mkdir -p India/UP/Lucknow
+mkdir {start..end} (Sequence Creation) Creates multiple folders efficiently using a sequence range.
+Example: mkdir Folder{1..10} (Creates Folder1 to Folder10).
+cd <path> (Change Directory) Used to enter a specific folder.
+Example: cd Project (Goes inside 'Project' folder).
+Special Navigation Commands:
+cd .. : Go back one step (parent folder).
+cd ~ : Go directly to the Home directory.
+cd - : Go back to the previous working directory.
+pwd (Print Working Directory) Displays the full path of the current location you are working in.
+Example: pwd (Output: /home/user/Project)
+ls (List) Lists all files and folders in the current directory.
+Example: ls (Simple list)
+Example: ls -l (Detailed list with permissions & size)
+Example: ls -a (Shows hidden files like .bashrc)
+Example: ls -R (Shows files inside sub-folders too)
+rmdir <name> (Remove Directory) Removes empty directories only. It will fail if the folder contains files.
+Example: rmdir EmptyFolder
+📄 Module 2: File Management
+Commands to create, view, edit, and delete files.
+touch <filename> Creates an empty file (0 KB size) or updates the timestamp of an existing file.
+Example: touch script.py
+cat <filename> (Concatenate) Displays the content of a file on the terminal.
+Example (Read): cat notes.txt
+Example (Write): cat > file.txt (Type text, then press Ctrl+D to save).
+cp <source> <destination> (Copy) Copies files from one location to another.
+Example (File): cp cloud1.txt cloud2.txt
+Example (Folder): cp -r DataFolder BackupFolder
+mv <source> <destination> (Move/Rename) Moves a file to a new location (Cut & Paste) or Renames it.
+Example (Rename): mv virat kohli (Renames 'virat' to 'kohli').
+Example (Move): mv file.txt MyDocuments/
+rm <filename> (Remove) Permanently deletes a file.
+Example: rm useless.txt
+rm Variations (Delete)
+rm -f file.txt : Force delete (no confirmation prompt).
+rm -r MyFolder : Recursive delete (deletes folder and contents).
+Example: rm -rf JunkFolder (Dangerous! Deletes everything inside without asking).
+💻 Module 3: System Information
+Commands to check server details and hardware info.
+uname (Unix Name) Displays the basic system name (e.g., Linux).
+Example: uname -r (Shows Kernel version like 5.4.0-150).
+Example: uname -a (Shows all info: Kernel, OS, Architecture).
+hostname Displays the network name of the machine.
+Example: hostname (Output: server1.example.com)
+Example: hostnamectl set-hostname myserver (Permanently sets new name).
+whoami Displays the username of the currently logged-in user.
+Example: whoami (Output: root or ec2-user).
+uptime Shows how long the system has been running.
+Example: uptime (Output: up 2 days, 4:30).
+du -sh <name> (Disk Usage) Shows the size of a specific file or directory in human-readable format.
+Example: du -sh MyProject (Output: 500M).
+⚡ Module 4: Power & Administration
+Commands to control system power and basic tools.
+clear Clears the terminal screen.
+Example: clear (or press Ctrl + L).
+date Displays the current system date and time.
+Example: date
+Example (Set Date): date -s "2 Oct 2025 10:00:00" (Requires root).
+bc (Basic Calculator) Opens a command-line calculator.
+Example: Type bc, then type 10+20 to get 30.
+System State Commands:
+Example: init 0 or poweroff (Shut down).
+Example: init 6 or reboot (Restart).
